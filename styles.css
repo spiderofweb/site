@@ -1,0 +1,33 @@
+/* Black & Blue theme */
+:root{
+  --bg:#000000;
+  --panel:#0b0b0b;
+  --accent:#0078ff;
+  --muted:#9aa6b2;
+  --text:#e6eef8;
+  --maxw:1100px;
+  --radius:10px;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--maxw);margin:32px auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#0047b3);display:flex;align-items:center;justify-content:center;font-weight:700}
+.nav a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px;align-items:center}
+.hero .intro h1{margin:0;font-size:34px;letter-spacing:0.2px}
+.hero .intro p{color:var(--muted);line-height:1.5}
+.cta{margin-top:18px}
+.btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.card{background:var(--panel);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.profile{display:flex;gap:16px;align-items:center}
+.avatar{width:120px;height:120px;border-radius:14px;background:linear-gradient(135deg,#0f1724,#071326);display:flex;align-items:center;justify-content:center;font-size:22px}
+.section{margin-top:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.project-card{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+.project-card h3{margin:0 0 8px 0}
+.footer{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);font-size:14px}
+.embed-pdf{width:100%;height:600px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);overflow:hidden}
+@media(max-width:880px){.hero{grid-template-columns:1fr;}.nav{display:none}}
